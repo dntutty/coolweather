@@ -1,7 +1,9 @@
 package com.coolweather.android.db;
 
 import org.litepal.crud.DataSupport;
-
+/**
+ * 建立城市模型
+ * 属性:id,cityName城市名称,cityCode城市代码,provinceId省份id*/
 public class City extends DataSupport {
     private int id;
     private String cityName;
@@ -26,5 +28,7 @@ public class City extends DataSupport {
     public void setCityCode(int cityCode) {
         this.cityCode =cityCode;
     }
+    public int getProvinceId() { return provinceId;}
+    public void setProvinceId(int provinceId) {this.provinceId= provinceId;}
 }
 

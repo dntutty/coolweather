@@ -1,7 +1,9 @@
 package com.coolweather.android.db;
 
 import org.litepal.crud.DataSupport;
-
+/**
+ *省份模型类,继承DataSupport
+ * 属性:id,provinceName省份名称,provinceCode省份代码*/
 public class Province extends DataSupport {
     private int id;
     private String provinceName;

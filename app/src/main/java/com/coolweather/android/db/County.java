@@ -1,7 +1,9 @@
 package com.coolweather.android.db;
 
 import org.litepal.crud.DataSupport;
-
+/**
+ * 县级模型,继承DataSupport
+ * 属性:id,县城名称,天气id,城市id*/
 public class County extends DataSupport {
     private int id;
     private String countyName;
@@ -18,7 +20,7 @@ public class County extends DataSupport {
     public String getCountyName() {
         return countyName;
     }
-    public void setCountyName() {
+    public void setCountyName(String countyName) {
         this.countyName = countyName;
     }
 
